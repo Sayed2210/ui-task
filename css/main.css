@@ -60,6 +60,13 @@ h3 {
   border: 1px solid #e9eaea;
   background-color: #f9f9f9;
   gap: 8px;
+  transition: 0.3s;
+}
+.headline > button:hover {
+  background-color: #8a74f9;
+}
+.headline > button:hover span {
+  color: #fff;
 }
 .headline > button span {
   color: #1c1c28;
@@ -321,6 +328,11 @@ h3 {
 .sales .toggles button {
   background-color: var(--main-color);
   color: white;
+  transition: 0.3s;
+}
+.sales .toggles button:hover {
+  background-color: #fff;
+  color: #8a74f9;
 }
 
 /*table*/
