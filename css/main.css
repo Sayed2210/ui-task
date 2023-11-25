@@ -369,6 +369,7 @@ h3 {
 }
 .hint span {
   background: url("../assets/Stat\ Container\ \(3\).svg") center no-repeat;
+  transition: 0.3s;
   text-align: center;
   width: 180px;
   height: 80px;
@@ -381,6 +382,10 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  opacity: 0;
+}
+p.hint:hover span {
+  opacity: 1;
 }
 .data-table .ticket-detitls .info p:first-of-type {
   color: var(--Black, #000);
