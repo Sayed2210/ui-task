@@ -9,6 +9,10 @@ h4,
 h5,
 h6 {
   line-height: initial !important;
+  margin-bottom: 0 !important;
+}
+p {
+  margin-bottom: 0 !important;
 }
 img {
   max-width: 100%;
@@ -28,11 +32,352 @@ svg {
     rgba(138, 116, 249, 0.26) 84.28%,
     rgba(138, 116, 249, 0) 175.89%
   );
-  opacity: 0.33;
+  opacity: 1;
   mix-blend-mode: multiply;
 }
-
+/* body */
 .main {
-    height: 100vh;
-    background-color: #F3F5F7;
+  height: 100vh;
+  background-color: #f3f5f7;
+}
+/* header */
+h3 {
+  font-size: 16px !important;
+  font-style: normal !important;
+  line-height: 28px !important;
+  color: var(--font-color) !important;
+}
+.headline > div {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #e7eaed;
+}
+.headline > button {
+  width: 78px;
+  height: 34px;
+  border-radius: 4px;
+  border: 1px solid #e9eaea;
+  background-color: #f9f9f9;
+  gap: 8px;
+}
+.headline > button span {
+  color: #1c1c28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+}
+/* stats and charts */
+.stats .chart {
+  border-radius: 8px;
+  border: 0.807px solid #ebebeb;
+  background: #fff;
+}
+
+.stats .chart .info p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12.904px;
+  color: #99a1b7;
+}
+.stats .chart .form-select {
+  width: auto !important;
+  height: auto !important;
+}
+
+@media (max-width: 768px) {
+  .stats .chart,
+  .stats .ticket {
+    width: 100%;
+  }
+}
+
+.stats .chart .chart-curve {
+  border-bottom: 1px solid #e5e5ef;
+}
+.stats .chart .chart-curve svg:nth-child(2) {
+  left: 0;
+}
+@media (max-width: 768px) {
+  .stats .chart .chart-curve svg:last-of-type {
+    left: 35%;
+    top: -5%;
+    height: 85px;
+  }
+}
+@media (max-width: 425px) {
+  .stats .chart .chart-curve svg:last-of-type {
+    left: 34%;
+    top: -6%;
+    height: 65px;
+  }
+}
+@media (max-width: 1024px) {
+  .stats .chart .chart-curve svg:last-of-type {
+    left: 36%;
+    top: -7%;
+  }
+}
+@media (min-width: 1440px) {
+  .stats .chart .chart-curve svg:last-of-type {
+    left: 36%;
+    top: -6%;
+    width: 56px;
+    height: 188px;
+  }
+}
+.stats .chart .chart-curve svg:last-of-type {
+  left: 35%;
+  top: -6%;
+  height: 98px;
+  width: 37px;
+}
+.stats .chart > ul {
+  color: #9291a5;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.13px; /* 134.419% */
+  letter-spacing: -0.24px;
+}
+/* tickets */
+.ticket {
+  border-radius: 8px;
+  width: 400px;
+  color: white;
+  overflow: hidden;
+  background: url(../assets/vector.svg) repeat-y top left/contain,
+    var(--main-color);
+}
+/* .ticket::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 2.5px dotted rgba(255, 255, 255, 0.4);
+  left: 0;
+  top: 50%;
+} */
+.ticket > div > h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.ticket > div > img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.ticket > div > img:hover + span {
+  opacity: 1;
+}
+.ticket > div > span {
+  opacity: 0;
+  transition: 0.3s;
+  background: url("../assets/Stat\ Container.png") left no-repeat;
+  font-size: 12px;
+  height: 37px;
+  width: 70px;
+  left: -20px;
+  left: -24px;
+  top: 30px;
+}
+.ticket .link {
+  width: 75%;
+}
+.ticket .link h4 {
+  color: var(--font-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23.285px;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  .ticket .link {
+    width: 100%;
+  }
+}
+
+.ticket > svg {
+  mix-blend-mode: initial;
+  right: -88px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .ticket > svg {
+    right: -40px;
+  }
+}
+.ticket .qr .discount > div h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.ticket > p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.qr .discount button {
+  height: 13px !important;
+  width: 44px !important;
+  font-size: 12px !important;
+}
+
+.qr .qr-img {
+  width: 82px;
+  height: 82px;
+}
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.toggle-switch {
+  background-color: var(--main-color);
+  width: 34px;
+  height: 19px;
+  padding: 2px;
+  position: relative;
+  -o-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  border-radius: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: white;
+  left: 4px;
+  top: 4px;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: white;
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "";
+  left: 20px;
+  background-color: var(--main-color);
+}
+
+.sales > h3 {
+  color: #1c1c28;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sales .settings .search input {
+  outline: none;
+  border: none;
+  border: 1px solid rgba(146, 161, 173, 0.4);
+  padding: 5px 22px;
+  border-radius: 8px;
+}
+
+.sales .settings .search svg {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sales .setting {
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  border-radius: 4px;
+}
+.sales .toggles > p {
+  color: #9c9d9f;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sales .toggles button {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/*table*/
+.data-table .table-head {
+  background-color: #e3e4e9;
+  border-bottom: 1px solid #f3f3f5;
+}
+.data-table .table-head p {
+  color: #abaab1;
+  font-size: 13.279px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.238px; /* 175% */
+}
+.data-table .table-data {
+  border-bottom: 1px solid #f3f3f5;
+}
+.data-table .table-data p {
+  color: #1c1c28;
+  font-size: 13.279px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.238px; /* 175% */
+}
+.data-table .user p:first-of-type {
+  color: #1c1c28;
+  font-size: 11.619px;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.918px; /* 171.429% */
+}
+.data-table .user p:last-of-type {
+  color: #92a1ad;
+
+  font-size: 9.959px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.918px; /* 200% */
+}
+.data-table .ticket-detitls .info p:first-of-type {
+  color: var(--Black, #000);
+
+  text-align: right;
+  font-family: Neo Sans Arabic;
+  font-size: 11.667px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 17.5px */
+}
+.data-table .ticket-detitls .info p:last-of-type {
+  color: rgba(0, 0, 0, 0.4);
+
+  text-align: right;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 15px */
 }
