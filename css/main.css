@@ -294,7 +294,7 @@ h3 {
   outline: none;
   border: none;
   border: 1px solid rgba(146, 161, 173, 0.4);
-  padding: 5px 22px;
+  padding: 5px 23px;
   border-radius: 8px;
 }
 
@@ -324,9 +324,13 @@ h3 {
 }
 
 /*table*/
+.data-table {
+  overflow: scroll;
+}
 .data-table .table-head {
   background-color: #e3e4e9;
   border-bottom: 1px solid #f3f3f5;
+  width: 1260px;
 }
 .data-table .table-head p {
   color: #abaab1;
@@ -335,8 +339,10 @@ h3 {
   font-weight: 400;
   line-height: 23.238px; /* 175% */
 }
-.data-table .table-data {
+.data-table .table-body {
   border-bottom: 1px solid #f3f3f5;
+  width: 1260px;
+  text-align: center;
 }
 .data-table .table-data p {
   color: #1c1c28;
@@ -361,6 +367,21 @@ h3 {
   font-weight: 400;
   line-height: 19.918px; /* 200% */
 }
+.hint span {
+  background: url("../assets/Stat\ Container\ \(3\).svg") center no-repeat;
+  text-align: center;
+  width: 180px;
+  height: 80px;
+  color: #fff;
+  padding: 30px 20px 10px;
+  top: -10px;
+  left: -84px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
 .data-table .ticket-detitls .info p:first-of-type {
   color: var(--Black, #000);
 
@@ -380,4 +401,40 @@ h3 {
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 15px */
+}
+.table-footer {
+  width: 1260px;
+}
+.table-footer div:first-of-type p {
+  color: #333;
+  font-family: Neo Sans Arabic;
+  font-size: 10.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.table-footer div:first-of-type .form-select {
+  width: 57px !important;
+  font-size: 10.5px;
+}
+
+.table-footer .pagention > p {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7e8299;
+  text-align: center;
+  font-size: 13.5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13.5px;
+  /*100%*/
+  letter-spacing: -0.135px;
+  border-radius: 8px;
+}
+.table-footer .pagention > p:first-of-type {
+  background-color: #8a74f9;
+  color: white;
 }
