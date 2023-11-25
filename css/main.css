@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: initial !important;
+}
+img {
+  max-width: 100%;
+}
+:root {
+  --main-color: #8a74f9;
+  --font-color: #1c1c28;
+}
+body {
+  font-family: "Neo Sans Arabic", sans-serif !important;
+  font-family: "Neo Sans", sans-serif;
+}
+svg {
+  fill: linear-gradient(
+    180deg,
+    #8a74f9 0%,
+    rgba(138, 116, 249, 0.26) 84.28%,
+    rgba(138, 116, 249, 0) 175.89%
+  );
+  opacity: 0.33;
+  mix-blend-mode: multiply;
+}
+
+.main {
+    height: 100vh;
+    background-color: #F3F5F7;
+}
